@@ -1,0 +1,336 @@
+body, html { height: 100% }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+
+img,embed,object,video { max-width: 100%; }
+
+
+@import url("http://fonts.googleapis.com/css?family=Didact+Gothic|Roboto+Condensed|Raleway|Nothing+You+Could+Do");
+
+body { font: normal 100% 'Raleway', helvetica, arial, sans-serif; font-size: 16px; font-weight: 400px; color: #582f1c; background: url('../images/textured_paper.png') repeat;}
+a { color: #f26522;} a:hover { color: #8dc63f;  }
+
+H1 { font-family: Futura-Book,'Didact Gothic', helvetica, arial, sans-serif; font-size: 1.875em;  /* 30px / 16px */ margin-top:20px;
+color: #582f1c; text-transform: uppercase; border-bottom: 2px solid #0ba14b; padding-bottom: 10px; height: 40px; clear: both; position: relative; }
+H1 span { font-size: 16px; }
+H1 img { margin-bottom: -8px;}
+H2 { font-family: 'Nothing You Could Do', cursive; font-weight: 400; color: #f26522; font-size: 1.875em;  /* 30px / 16px */  padding-bottom: 10px;}
+
+H3 { font-family: 'Raleway', helvetica, arial, sans-serif; font-size: .666em; /* 24px / 16px */  font-weight: 700px; }
+
+ol, ul { line-height: 28px; }
+.GeneralSubmit { background: #8dc63f; border-radius: 40px; margin: 20px auto 10px auto !important; color: white; 
+		padding: 0px 20px 20px 20px !important; width: auto !important; text-transform: uppercase; height: 40px !important; 
+		font-family: Futura-Book,'Didact Gothic', sans-serif; font-size: 24px; position: relative; clear: both;  }
+.GeneralFormStyle { text-indent: 10px; height: 25px; font-size: 14px; }
+
+#Container { background: #fff; border-left: 1px solid #c2c2c2; 
+	 border-right: 1px solid #c2c2c2; max-width: 1024px; margin: 0px auto;   padding: 1.250em; /*20px*/  }
+	
+#Page { position: relative; width: 100%; 	background: #fff; clear: both; content: " ";
+		    display: table; padding: 0px 0px 20px;}
+
+#LoginArea { position: relative; margin: 60px auto 0px auto; width: 16.9%; /*16.3%*/}
+#LoginArea img { min-width: 200px; margin-bottom: 20px;}
+
+#LoginForm input { height: 25px; border: 1px solid #c2c2c2; width: 200px; margin-bottom: 10px; text-indent: 10px;}
+
+	#LoginForm { font-size: 12px; font-family: helvetica, arial, sans-serif; width: 200px;}
+
+#loginButton  { background: #8dc63f; border-radius: 40px; margin: 20px auto 10px auto !important; color: white; 
+		padding: 5px 15px 28px 5px !important; width: auto !important; text-transform: uppercase; height: 24px !important; 
+		font-family: Futura-Book,'Didact Gothic', sans-serif; font-size: 24px; position: relative; clear: both;  }
+		
+#loginButton:hover { background: #8dc63f; }		
+		
+#footer { height: 100px; position: relative; background: #fff;
+max-width: 1024px; margin: 0px auto;   padding: 1.250em; /*20px*/  text-align: right; clear: both;	border-left: 1px solid #c2c2c2;
+		 border-right: 1px solid #c2c2c2; border-bottom: 1px solid #c2c2c2;
+}
+
+/*Header*/
+#Header { margin: 0px; position: relative; width: 100%;}
+#Logo { float: left; width: 153px; margin-bottom: 10px; margin-right: 20px;}
+#RightSectionHeader { float: left; width: 82%; }
+#TopNav { float: right; width: 100%; }
+#Welcome { float: right; margin-left: 10px; text-align: right;}
+#Search { float: right;  }
+#searchfield { float: left; position: relative;  height: 20px;}
+#searchBtn { float: right; left: -15px;
+    position: relative;}
+#Menu { float: right; width: 100%; border-top: 2px dotted #0ba14b; border-bottom: 2px dotted #0ba14b; height: 55px; margin-top: 32px; }
+#Menu ul { list-style-type: none; margin: 0px; padding: 0px;margin-top: 15px; float: right;}
+#Menu ul li {display: inline; }
+#Menu ul li a { color: #f26522; font-family: Futura-Book,'Didact Gothic', sans-serif; text-transform: uppercase; font-size: 17px; 
+text-decoration: none; padding-left: 3px;}
+#Menu ul li a:hover { color: #603813;  }
+#Menu ul li:last-child { background: none !important; }
+#Menu  li { background: url('../images/leafDivider.png') right no-repeat; padding-right: 20px; }
+
+/*Delivery*/
+
+#DeliveryAdmin { float: right; width: 100%; margin-top: 10px; }
+#DeliveryIcons { float: right; margin: 0px 10px;}
+#DeliveryDate { float: right; padding-top: 9px; margin: 0px 10px;}
+#DeliverySort { float: right; margin: 0px 10px; }
+#DeliverySort select { height: 40px; font-size: 16px; padding-top: 7px;}
+#DeliveryTable { clear: both; float: left; width: 100%; margin-top: 20px; }
+#DeliveryTable tr td { padding: 5px 5px 15px 5px;}
+
+#DeliveryTable .dTableHeader { background: #f26522; color: white;}
+#DeliveryTable .evenRow { background: #ebebeb; }
+
+/*Menu*/
+
+#MenuDate { float: right; font-family: 'Roboto Condensed', sans-serif; font-size: 30px; color: #8dc63f; font-weight: 200;}
+#MenuTable .oddRow { background: #fdfbea; }
+#MenuTable { clear: both; float: left; width: 100%; margin-top: 20px; }
+#MenuTable tr td { padding: 5px 5px 15px 5px; color: #0ba14b;}
+#MenuTable tr td span { float: right; color: #582f1c;}
+#MenuTable .dTableHeader { text-align: center; background: #f26522; color: #ffffff !important;}
+#MenuTable .dTableHeader td { color: white; }
+#MenuSubmit { float: right; margin-top: 30px; }
+
+/*Sides*/
+#currentSides { float: left; width: 70%;  position: relative;}
+#currentSides a { background: url('../images/RemoveBtn.png') no-repeat; text-indent: -3000px; display: block; width: 14px; height: 14px; float: left;
+ margin-top: 4px; margin-left: 20px;}
+
+#currentSides ol { margin-left: 20px;}
+#currentSides ol li span { float: left;}
+#addNewSide { width: 29.18367%; float: left;}
+.doublecolList { -moz-column-count: 1; float: left; width: 220px;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 20px;
+    column-count: 1;
+    column-gap: 20px;}
+#addNewSide { -webkit-border-radius: 4px; border-radius: 4px; border: 1px dotted #e3e3e3; margin-top: 30px;
+	width: 264px; padding: 20px; display: block; text-align: center; }
+
+
+/*Schools*/
+#CurrentSchools { float: left; width: 420px; margin: 20px 80px 0px 0px; }
+.School { background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f5f5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#f5f5f5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+margin-bottom: 10px; webkit-border-radius: 4px; border-radius: 4px; border: 1px dotted #e3e3e3; display: block; width: 100%; padding: 10px;}
+.School a H3.Expanded { 
+	background: url('../images/DownArrow.png') no-repeat top right;  
+	text-decoration: none !important; font-size: 18px; font-weight: bold; font-family: helvetica, arial, sans-serif; margin-bottom: 10px;}
+.School a H3.Collapsed { 
+	background: url('../images/RightArrow.png') no-repeat top right;
+	text-decoration: none !important; font-size: 18px; font-weight: bold; font-family: helvetica, arial, sans-serif; margin-bottom: 10px;}
+.SchoolContent { };
+
+.School table { width: 100%; }
+.School tr td { font-size: 12px; }
+#AddSchool { float: left; width: 420px; margin: 20px 0px 0px 0px;}
+#SchoolContent { width: 100%; margin: 30px auto 0px auto; }
+.bold { font-weight: bold; }
+/*#AddSchoolForm { width: 100%;}*/
+#AddSchoolForm input { width: 100%; margin-bottom: 20px;}
+#AddSchoolForm textarea { padding: 10px; font-family: helvetica, arial, sans-serif; font-size: 14px; width: 96%; height: 200px;}
+
+
+/*Customers*/
+
+#CustomerTable { float: left; width: 50%; margin-right: 40px; }
+#CustomerProfile { float: left; width: 40%; }
+#CustomerSort { margin-top: 20px; }
+
+/*Edit Profile */
+
+
+#EditProfileArea { position: relative; margin: 0px auto; width: 20%; }
+	#EditProfileForm { font-size: 12px; font-family: helvetica, arial, sans-serif; width: 200px; margin-top:20px;}
+#EditProfileForm input { height: 25px; border: 1px solid #c2c2c2; width: 200px; margin-bottom: 10px; text-indent: 10px;}
+
+
+input.SubmitButton { width: auto !important; border: none !important;}
+
+/*Forgot Password*/
+
+#ForgotPasswordArea { position: relative; margin: 0px auto; width: 30%; }
+
+/****DEVICE STYLES*****/
+
+		@media screen and (max-width: 320px) {
+
+		body {}
+			#addNewSide { width: 240px; }
+			#MenuSubmit {float: left; clear: both;}
+			#MenuDate {float: left; clear: both; margin-top: 10px;}
+			#Welcome {
+			    float: none !important; width: 280px;
+			    margin: 0px auto 10px !important;
+			    text-align: center;}
+	#searchfield { width: 250px; height:25px;}
+	#header { width: 100% !important;}
+#Logo { float: none !important; margin: 0px auto 20px !important; width: 131px; margin-bottom: 20px;}
+#LoginArea img { min-width: 200px;}
+#LoginArea { width: 100%; float:left;   margin: 0px auto 0px 30px !important;}
+#TopNav { margin: 0px auto; width: 280px; float: none !important; }
+#Menu { height: 210px !important; }
+#Search { float: none !important; width: 280px; }
+#Welcome { float: left; margin: 10px 0px 10px 0px;  }
+#Header { margin-bottom: 20px; width: 100%;}
+#Menu { float: left !important; width: 320px !important; margin-top: 0px !important; border-top: none !important;}
+#Menu ul { float: left; }
+#Menu ul li { display: block; }
+#Menu  li { background: url('../images/leafDivider.png') left no-repeat; padding-left: 20px; margin: 5px 0px 5px 0px; }
+#Menu ul li:last-child { background: url('../images/leafDivider.png') left no-repeat !important; padding-left: 20px; }
+#Menu ul li a { font-size: 16px;}
+#DeliveryAdmin { padding-right: 10px; float: left !important; }
+#DeliveryIcons {  float: left !important; }
+#DeliverySort {  float: left !important; }
+#CurrentSchools { width: 220px;}
+#AddSchool { width: 220px; }
+
+#CustomerTable { margin-bottom: 20px;}
+	#EditProfileArea { position: relative; float: left; margin: 0px auto; width: 320px !important; }
+	#EditProfileArea H1 { width: 100%;}
+	}
+	
+	
+	@media screen and (max-width: 240px) {
+
+		body {}
+
+
+	#Logo { float: none; margin: 0px auto; width: 160px; margin-bottom: 20px;}
+	#LoginArea img { min-width: 200px;}
+	#LoginArea { width: 95%;  margin: 10px auto 0px auto;}
+	#TopNav { float: left; width: 100%; }
+	#Menu { height: 210px !important; }
+	#Search { float: left;  }
+	#Welcome { float: left; margin: 10px 0px 10px 0px;  }
+	#Header { margin-bottom: 20px;}
+	#Menu { float: left;}
+	#Menu ul li { display: block;}
+	#Menu  li { background: url('../images/leafDivider.png') left no-repeat; padding-left: 20px; margin: 5px 0px 5px 0px; }
+	#Menu ul li:last-child { background: url('../images/leafDivider.png') left no-repeat !important; padding-left: 20px; }
+	#Menu ul li a { font-size: 16px;}
+	#DeliveryAdmin { padding-right: 10px; }
+	#EditProfileArea { position: relative; margin: 0px auto; width: 100%; }
+		}
+	
+
+
+	
+	
+				
+
+
+
+		
+		
+		
+	/*	@media screen and (min-width: 480px) {
+
+				body {}
+					#LoginArea img {}
+					#LoginArea {   margin-top: 0px !important;}
+			#TopNav { margin: 0px auto !important; width: 400px; font-size: 12px !important; }
+			
+
+					#Menu { float: left; width: 100%; margin-top: 0px !important; border-top: none !important; clear:both;}
+			#Menu { height: 110px !important; }
+					#Menu ul li a { font-size: 16px;}
+
+						#header { width: 480px !important;}
+					#Logo { margin: 0px auto 20px !important; width: 240px; float: none !important; }
+					#DeliveryAdmin { padding-right: 10px; float: left !important; }
+					#DeliveryIcons {  float: left !important; }
+					#DeliverySort {  float: left !important; }
+						#addNewSide { width: 50% !important; float:right;}
+						#currentSides { width: 50% !important;}
+						#MenuSubmit {float: left; clear: both;}
+						#MenuDate {float: left; clear: both; margin-top: 10px;}	
+
+						}*/
+		@media screen and (max-width: 650px) {
+
+			body {}
+#Menu { height: 75px; }
+		#LoginArea img {}
+		#LoginArea {   margin-top: 0px !important;}
+		#EditProfileArea { position: relative; margin: 0px auto; width: 40%; }
+			}
+			
+			@media screen and (max-width: 768px) {
+
+				body {}
+#RightSectionHeader { width: 75%;} #Menu { height: 75px; }
+			#LoginArea img { min-width: 200px;}
+			#LoginArea { width: 30%;  margin: 50px auto 0px auto;}
+			
+				#currentSides { width: 300px !important;} 	#addNewSide { width: 300px !important; float:right;}
+				.doublecolList { width: 180px !important;}
+				#EditProfileArea { position: relative; margin: 0px auto; width: 30%; }
+				}
+
+
+					@media screen and (max-width: 1024px) {
+
+						body {}
+		
+						#currentSides { width: 68% !important;}
+						.doublecolList {
+						    width: 180px;	}
+						}

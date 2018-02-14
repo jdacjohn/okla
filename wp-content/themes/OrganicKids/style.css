@@ -1,0 +1,235 @@
+/*
+Theme Name: Organic Kids LA
+Theme URI: http://www.organickidsla.com
+Description: Child theme for the Responsive theme
+Author: Goddess Design
+Author URI: http://www.goddessdesignonline.com
+Template: responsive
+Version: 0.1.0
+*/
+
+@import url("../responsive/style.css");
+@import url("http://fonts.googleapis.com/css?family=Didact+Gothic|Roboto+Condensed|Raleway|Nothing+You+Could+Do");
+
+body { font-family: helvetica, arial, sans-serif; font-size: 15px; font-weight: 200px; color: #603813; background: ('http://www.organickidsla.com/admin/images/textured_paper.png') repeat !important;}
+a { color: #f26522;} a:hover { color: #603813; }
+#logo{ margin: 10px 0px 10px 0px; }
+#container { background: white; border-left: 1px solid #c2c2c2; border-right: 1px solid #c2c2c2;}
+#wrapper { border: none; padding: 0px 0px 20px 0px !important;}
+#footer { background: white; border-left: 1px solid #c2c2c2; border-right: 1px solid #c2c2c2; border-bottom: 1px solid #c2c2c2;}
+.menu { background: none; float: right; border-top: 2px dotted #0ba14b; border-bottom: 2px dotted #0ba14b;}
+.menu a { font-weight: 400; }
+.menu ul li a { color: #f26522; font-family: Futura-Book,'Didact Gothic', sans-serif; text-transform: uppercase; font-size: 17px;}
+.menu ul li a:hover { color: #603813; background: none; }
+.menu li:hover { background: none !important;}
+.menu li a { padding: 0 0.6em; color: #f26522; font-family: Futura-Book,'Didact Gothic', sans-serif; text-transform: uppercase; font-size: 18px; text-shadow: none; border: none;}
+.menu li a:hover { color: #603813; background: none !important; }
+.menu a:hover { background: none !important; }
+.menu .current_page_item a,
+.menu .current-menu-item a {
+background: none;
+}
+.menu li li { margin-top: 0px;}
+.menu li { background: url('images/leafDivider.png') right no-repeat; padding-right: 20px; }
+
+ul.menu > li:hover {
+background-color: none; background: none !important;
+}
+
+.main-nav { float: right; margin-top: 38px; }
+.grid .col-380 { margin-bottom: 1.12766% }
+
+.footer-menu { text-align: left; font-size: 12px;}
+#footer a { color: #f26522; font-family: 'Raleway', sans-serif; font-weight: 200; }
+#footer .social-icons { text-align: left; }
+
+H1.post-title { font-family: Futura-Book,'Didact Gothic', helvetica, arial, sans-serif; font-size: 1.875em; /* 30px / 16px */
+color: #582f1c; text-transform: uppercase; border-bottom: 2px solid #0ba14b; padding-bottom: 10px; height: 40px; clear: both; position: relative; font-weight: 400 !important;}
+
+H2 { font-family: 'Nothing You Could Do', cursive; font-weight: 400; color: #f26522; font-size: 30px; }
+.widget-wrapper { background: none; border: none; }
+
+
+/*Login Area */
+
+#LoginArea { position: relative; margin: 40px auto 0px auto; width: 16.9%; /*16.3%*/}
+#LoginArea img { min-width: 200px; margin-bottom: 20px;}
+
+#LoginForm input { height: 25px; border: 1px solid #c2c2c2; width: 200px; margin-bottom: 10px; text-indent: 10px;}
+
+#LoginForm { font-size: 12px; font-family: helvetica, arial, sans-serif; width: 200px;}
+
+#loginButton { background: #8dc63f; border-radius: 40px; -webkit-border-radius: 40px;margin: 0px auto 10px auto !important; color: white;
+padding: 5px 15px 18px 5px !important; width: auto !important; text-transform: uppercase; height: 24px !important; font-weight: 200;
+font-family: Futura-Book,'Didact Gothic', sans-serif; font-size: 24px; position: relative; clear: both; display: inline-block; }
+
+#loginButton:hover { background: #8dc63f; }
+
+.GeneralFormStyle { text-indent: 10px; height: 30px; font-size: 14px; font-family: 'Raleway', sans-serif; font-weight: 200; background: #f3f3f3 !important;}
+
+/*Create Account*/
+
+#CreateAccountLeft { float: left; width: 40%; margin-right: 40px; }
+#CreateAccountRight { float: left; width: 55%; }
+#CreateAccountLeft table,tr td { border: 0 !important; }
+#CreateAccountRight table,tr td  { border: 0 !important; }
+#CreateSubmit { float: left; width: 100%; }
+#CreateErrorMessage { float: left; width: 100%; }
+.GeneralError { color: red; font-weight: 700; font-size: 14px;  }
+.PasswordError { background: #f7caca; border-radius: 4px; -webkit-border-radius: 4px; color: black; font-size: 12px; padding: 10px; border: 2px solid red;}
+.inputError { border: 2px solid red !important; }
+#PasswordInstructions { font-size: 11px; margin-top: 10px; line-height: 15px;}
+
+	/*Menu*/
+#MenuLeftCol { float: left; width: 66%; margin-right: 30px; }
+#MenuDate { float: right; font-family: 'Roboto Condensed', sans-serif; font-size: 30px; color: #8dc63f; font-weight: 200;}
+#MenuInstructions { float: left; width: 66%; }
+
+#MenuRightCol { float: left; width: 30.7692%; }
+#LunchProfile { float: left; width: 100%;}
+#LunchProfile table { border: 0px !important; margin: 10px 0px 0px 0px !important;}
+#LunchProfile tr td { padding: 5px !important;}
+#SelectedDays { float: left; width: 100%;}
+.DateSelected { border-radius: 4px; -webkit-border-radius: 4px; background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f5f5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#f5f5f5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+border: 1px dotted #cacaca; padding: 10px; font-size: 13px; font-family: helvetica, arial, sans-serif; margin-bottom: 10px;
+}
+.DateSelected table { border: 0px !important; margin: 10px 0px 0px 0px !important;}
+.DateSelected tr td { padding: 5px !important;}
+.DateSelected  a H3.Expanded { margin-top: 0px; background: url('http://www.organickidsla.com/admin/images/DownArrow.png') no-repeat top right; text-decoration: none !important; font-size: 18px; font-weight: bold; font-family: helvetica, arial, sans-serif; margin-bottom: 10px;}
+.DateSelected  a H3.Collapsed { margin-top: 0px; background: url('http://www.organickidsla.com/admin/images/RightArrow.png') no-repeat top right;  text-decoration: none !important; font-size: 18px; font-weight: bold; font-family: helvetica, arial, sans-serif; margin-bottom: 10px;}
+#MonthlyCal { float: left; width: 100%; margin-top: 20px; clear: both; }
+#MenuTable { margin-top: 0px;}
+#MenuTable .selected { background: #8DC63F; color: #582f1c;}
+#MenuTable .selected span { color: #fff; font-weight: bold; }
+#MenuTable .oddRow { background: #fdfbea; }
+#MenuTable tr td { padding: 5px 5px 15px 5px; color: #0ba14b; border: 1px dotted #cacaca !important;}
+#MenuTable tr td span { float: right; color: #582f1c;}
+#MenuTable .dTableHeader { text-align: center; background: #f26522; color: #ffffff !important;}
+#MenuTable .dTableHeader td { color: white; }
+#ChooseDay { display: none; background: #0BA14B; opacity: .8; color: #fff; padding: 10px; position: absolute; z-index: 1000;}
+#MenuTable tr td:hover + #ChooseDay { display: block; }
+#MenuTable tr td a { display: block; width: 100%; height: 100%;}
+
+/*MENU Pop-Up First Timers Box*/
+#PopUpFirstTime { height: 700px; width: 550px; overflow: hidden;}
+#FirstTimeInfo { width: 100%; background: white; border: 2px solid #0BA14B; width: 510px; height: 635px; padding: 20px;}
+
+#FirstTimeInfo H2 { font-family: 'Roboto Condensed', sans-serif; font-size: 30px; color: #582E1B; font-weight: 400; margin-top: 0px;
+ text-align: center; }
+#FirstTimeInfo H3 { font-size: 18px; font-weight: 700; color: #582E1B; margin: 0px; padding: 0px; }
+#LunchOptions { font-size: 14px; line-height: 18px; text-align: center; border-bottom: 3px solid #f3f3f3;}
+#LunchOptions p { clear: both; width: 100%; text-align: center; margin-top: 0px !important; font-size: 18px;}
+#ChefsSpecial { float: left; background: url('images/Menu_ChefSpecial.jpg') no-repeat; display: block; width: 185px; height: 198px; padding: 15px 10px 0px 10px;}
+#BentoBox { float: right; background: url('images/Menu_Bento.jpg') no-repeat; display: block; width: 185px; height: 198px; padding: 15px 10px 0px 10px;}
+
+#OR { float: left; width: 34px; font-size: 24px; font-weight: 700; color: #582E1B; margin: 70px 33px 0px 33px;}
+#Ordering { border-bottom: 3px solid #f3f3f3; position: relative; float: left;
+    padding: 20px 0px;}
+#Number1Small {  position: relative; float: left; background: url('images/Number1_sm.png') top left no-repeat; padding-left: 40px; text-align: left; width: 120px; margin: 0px 10px 0px 10px; font-size: 16px; line-height: 22px;}
+	#Number2Small {  position: relative;float: left; background: url('images/Number2_sm.png') top left no-repeat; padding-left: 40px; text-align: left; width: 120px; margin-right: 10px; font-size: 16px; line-height: 22px;}
+		#Number3Small {  position: relative;float: left; background: url('images/Number3_sm.png') top left no-repeat; padding-left: 40px; text-align: left; width: 120px;  font-size: 16px; line-height: 22px;}
+		#Smoothie { padding-top: 20px; width: 250px; margin: 0px auto; position: relative; clear: both; }
+		#SmoothieText { width: 100px; margin-right: 15px; float: left; font-size: 16px; line-height: 22px; }
+		#SmoothieText H2 {text-indent: -10px;}
+		#SmoothieImg { width: 121px; float: left; }
+		#DontShowAnyMore { display: block; background: #363636; height: 25px; color: #fff; text-align: center; width: 100%; clear: both;}
+
+/*Menu Order Pop-Up*/
+#OrderPage { width: 450px; background: white; border: 2px solid #0BA14B;  overflow: hidden; padding: 20px;}
+
+#OrderPage H1 { font-family: Futura-Book,'Didact Gothic', helvetica, arial, sans-serif; font-size: 1.5em; /* 24px / 16px */
+color: #582f1c; text-transform: uppercase; border-bottom: 2px solid #0ba14b; margin: 0px 0px 10px 0px; padding: 0px; height: 40px; clear: both;}
+
+#OrderDate { font-family: helvetica, arial, sans-serif; font-size: 1.125em; color: #8dc63f; margin-bottom: 40px; }
+#OrderPage H2 { margin-top: 0px;}
+#LunchType { background: url('images/Number1_sm.png') no-repeat; padding-left: 40px;  float: left; margin-bottom: 20px;}
+#LunchSize { background: url('images/Number2_sm.png') no-repeat; padding-left: 40px;  float: left; clear: both; margin-bottom: 20px;}
+#SmoothieOrder { background: url('images/Number3_sm.png') no-repeat; padding-left: 40px; float: left; clear: both;}
+#SmoothieOrder label { font-size: 18px; font-weight: 400; }
+#TotalCredits {  clear: both; background: #F3F3F3; padding: 20px; display: block; height: 25px; border-radius: 4px;
+	 -webkit-border-radius: 4px; font-size: 18px; text-align: center; margin-top: 20px;}
+#OrderPage #SidesMenu { list-style-type: none; clear: both; float: left;}
+#PlaceOrderBtn { width: 201px; text-align: center; margin-top: 20px auto 0px auto; clear: both; }
+
+/*Current Sides Pop-Up*/
+#CurrentSidesPopUp { width: 500px; background: white; border: 2px solid #0BA14B; height: 800px; padding: 20px;  font-family: 'Raleway', Helvetica, Arial; font-size: 18px;}
+#CurrentSidesPopUp ul li { background: url('images/leafDivider.png') no-repeat; padding-left: 20px; display: block; margin-bottom: 10px;  }
+#CurrentSidesPopUp ul { list-style-type: none; }
+#CurrentSidesPopUp  H1 { font-family: Futura-Book,'Didact Gothic', helvetica, arial, sans-serif; font-size: 1.2em; /* 24px / 16px */
+color: #582f1c; text-transform: uppercase; border-bottom: 2px solid #0ba14b; margin: 0px 0px 30px 0px; padding: 0px; height: 40px; clear: both;}
+
+/*Sample Menu*/
+
+#SampleMenuSides ul li { background: url('images/leafDivider.png') no-repeat; padding-left: 20px; display: block; margin-bottom: 10px;  }
+#SampleMenuSides ul { list-style-type: none; }
+
+/*Store*/
+
+.default_product_display h2.prodtitle, #content .default_product_display h2.prodtitle { font-family: 'Raleway', Helvetica, Arial; 
+font-size: 18px; font-weight: 400 !important; color: #603812;}
+
+/*Featured HomePage */
+
+.featured-title { font-size: 36px; font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif; color: #603813; line-height: 40px; 
+font-weight: 400;text-align: left; padding: 0px 0px 0px 40px; margin-top: 60px;}
+#featured { border: none; padding-bottom: 0px; }
+#featured p { text-align: left; padding: 0px 0px 0px 40px; }
+a.blue { background: #8dc63f; border-radius: 40px; -webkit-border-radius: 40px; background-image: none; border: none; 
+	text-shadow: none; font-weight: 400; font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;}
+	
+#TaglineHome { border-top: 2px dotted #0ba14b; border-bottom: 2px dotted #0ba14b; font-family: 'Nothing You Could Do', cursive; font-weight: 200;
+ color: #f26522; font-size: 18px; text-align: center; width: 100%; clear: both; margin: 0px auto; padding: 10px 0px 10px 0px; }	
+/*******DEVICE STYLE SHEET SECTION*******/
+
+@media screen and (max-width: 320px) {
+
+body {}
+#smcwidget-2 { display: none; }
+.menu { background: #aeaeae; float: none !important; }
+.main-nav { float: none;background-color: #f9f9f9 !important; background-image: none !important; }
+.js .main-nav #responsive_current_menu_item { color: #582E1A !important; font-family: Futura-Book,'Didact Gothic', sans-serif; 
+text-transform: uppercase; font-size: 24px !important; font-weight: 400 !important;}
+.js .main-nav { height: 40px !important;}
+#logo { margin-bottom: 20px;}
+#MenuRightCol { float: left; width: 100%; }
+#MenuLeftCol { float: left; width: 100%; }
+H1.post-title { display: none; }
+ #content-full { margin-top: 0px; }
+}
+
+@media screen and (max-width: 480px) {
+	
+
+body {}
+
+#smcwidget-2 { display: none; }
+.menu { background: #aeaeae; float: none !important; }
+.main-nav { float: none;background-color: #f9f9f9 !important; background-image: none !important; }
+.js .main-nav #responsive_current_menu_item{ color: #582E1A !important;font-family: Futura-Book,'Didact Gothic', sans-serif; text-transform: uppercase; 
+font-size: 24px !important; font-weight: 400 !important;}
+.js .main-nav { height: 40px !important;}
+#logo { margin-bottom: 20px;}
+#MenuRightCol { float: left; width: 100%; }
+#MenuLeftCol { float: left; width: 100%; }
+H1.post-title { display: none; }  #content-full { margin-top: 0px; }
+}
+
+
+@media screen and (max-width: 650px) {
+
+body {}
+
+
+
+.menu { background: #aeaeae; float: none !important; }
+.main-nav { float: none;background-color: #f9f9f9 !important; background-image: none !important; }
+.js .main-nav #responsive_current_menu_item { color: #f26522;font-family: Futura-Book,'Didact Gothic', sans-serif; text-transform: uppercase; }
+#logo { margin-bottom: 20px;}
+}
